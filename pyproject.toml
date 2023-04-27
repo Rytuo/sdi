@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sdi"
+version = "0.0.1"
+authors = [
+    { name = "Aleksandr Popov", email = "popov.aleksandr.v01@gmail.com" },
+]
+description = "A package providing single interface to different interpolation methods"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.9"
+dependencies = [
+    "gstools>=1.4.1",
+    "numpy>=1.23.5",
+    "scipy>=1.10.0",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/rytuo/sdi"
+
+[tool.setuptools]
+license-files = ["LICENSE"]
