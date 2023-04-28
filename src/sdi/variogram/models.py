@@ -15,7 +15,7 @@ MODELS = {
 }
 
 
-def get_model(
+def get_cov_model(
         model_name: str,
         var: float = 1.0,
         len_scale: float = 1.0,
@@ -40,9 +40,9 @@ def get_model(
     )
 
 
-def fit_model(
+def fit_cov_model(
         model: gs.CovModel,
-        bin_center: np.ndarray,
+        bin_centers: np.ndarray,
         gamma: np.ndarray,
         **para_select,
 ) -> gs.CovModel:
@@ -51,7 +51,7 @@ def fit_model(
     See `gstools.covmodel.base.CovModel`
 
     :param model: covariance model
-    :param bin_center: bin centers of empirical variogram
+    :param bin_centers: bin edges of empirical variogram
     :param gamma: values of empirical variogram
     :param para_select: dictionary with mapping `parameter_name -> isExcluded`, use to deselect parameters from fitting
     :return:
@@ -60,5 +60,5 @@ def fit_model(
             and ('len_scale' in para_select and para_select['len_scale'] is False) \
             and ('param' in para_select and para_select['param'] is False):
         return model
-    model.fit_variogram(bin_center, gamma, **para_select)
+    model.fit_variogram(bin_centers, gamma, **para_select)
     return model
