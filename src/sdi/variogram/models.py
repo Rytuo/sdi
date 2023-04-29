@@ -58,7 +58,7 @@ def fit_cov_model(
     """
     if ('var' in para_select and para_select['var'] is False) \
             and ('len_scale' in para_select and para_select['len_scale'] is False) \
-            and ('param' in para_select and para_select['param'] is False):
+            and ('nugget' in para_select and para_select['nugget'] is False):
         return model
     model.fit_variogram(bin_centers, gamma, **para_select)
     return model

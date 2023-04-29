@@ -24,4 +24,4 @@ class Universal(Interpolator):
             drift_degree: int = 0,
     ):
         model = gs.krige.Universal(cov_model, points.T, target, exact=False, drift_functions=drift_degree)
-        self.model = lambda *args: model(args, post_process=False, store=False)[0]
+        self.model = lambda coords: model(coords.T, post_process=False, store=False)[0]

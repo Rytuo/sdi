@@ -22,4 +22,4 @@ class Simple(Interpolator):
             target: np.ndarray,
     ):
         model = gs.krige.Simple(cov_model, points.T, target, exact=False)
-        self.model = lambda *args: model(args, post_process=False, store=False)[0]
+        self.model = lambda coords: model(coords.T, post_process=False, store=False)[0]

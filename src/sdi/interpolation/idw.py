@@ -27,7 +27,7 @@ class Idw(Interpolator):
         sparse_tree = KDTree(points)
         n = len(points)
 
-        def model(dense_points: list[tuple[float, float]]) -> np.ndarray:
+        def model(dense_points: np.ndarray[float]) -> np.ndarray:
             def shepard(dists: np.ndarray[float], ind: np.ndarray):
                 invalid = np.nonzero(ind == n)
                 if len(invalid) > 0:
