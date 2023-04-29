@@ -1,7 +1,7 @@
 import numpy as np
-from sdi.interpolation.kriging import Simple, Ordinary, Universal
+from sdinterp.interpolation.kriging import Simple, Ordinary, Universal
 
-from sdi.variogram import calc_empirical, get_cov_model, fit_cov_model
+from sdinterp.variogram import calc_empirical, get_cov_model, fit_cov_model
 
 
 def test_simple_kriging():

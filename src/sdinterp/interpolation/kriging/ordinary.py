@@ -1,7 +1,7 @@
 import gstools as gs
 import numpy as np
 
-from sdi.interpolator import Interpolator
+from sdinterp.interpolator import Interpolator
 
 
 class Ordinary(Interpolator):

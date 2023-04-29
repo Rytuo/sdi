@@ -3,8 +3,8 @@ requires = ["setuptools>=64"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "sdi"
-version = "1.0.0"
+name = "sdinterp"
+version = "0.0.1"
 authors = [
     { name = "Aleksandr Popov", email = "popov.aleksandr.v01@gmail.com" },
 ]
@@ -24,7 +24,7 @@ classifiers = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/rytuo/sdi"
+"Homepage" = "https://github.com/rytuo/sdinterp"
 
 [tool.setuptools]
 license-files = ["LICENSE"]

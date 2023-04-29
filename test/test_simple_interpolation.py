@@ -1,5 +1,5 @@
 import numpy as np
-from sdi.interpolation import Idw, Linear, Nearest, Rbf
+from sdinterp.interpolation import Idw, Linear, Nearest, Rbf
 
 
 def test_idw():

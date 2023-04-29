@@ -1,7 +1,7 @@
 import numpy as np
 from scipy.spatial import KDTree
 
-from sdi.interpolator import Interpolator
+from sdinterp.interpolator import Interpolator
 
 
 class Idw(Interpolator):

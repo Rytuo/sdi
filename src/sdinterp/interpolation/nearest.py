@@ -1,7 +1,7 @@
 import numpy as np
 from scipy.interpolate import NearestNDInterpolator
 
-from sdi.interpolator import Interpolator
+from sdinterp.interpolator import Interpolator
 
 
 class Nearest(Interpolator):

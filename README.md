@@ -8,8 +8,8 @@ Regular usage of ordinary kriging method
 
 ```python
 import numpy as np
-from sdi.variogram import calc_empirical, get_cov_model, fit_cov_model
-from sdi.interpolation.kriging import Ordinary
+from sdinterp.variogram import calc_empirical, get_cov_model, fit_cov_model
+from sdinterp.interpolation.kriging import Ordinary
 
 # prepare data
 n = 100

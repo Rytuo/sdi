@@ -1,7 +1,7 @@
 import numpy as np
 from scipy.interpolate import RBFInterpolator
 
-from sdi.interpolator import Interpolator
+from sdinterp.interpolator import Interpolator
 
 
 class Rbf(Interpolator):

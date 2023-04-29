@@ -1,7 +1,7 @@
 import numpy as np
 import pytest
 
-from sdi.variogram import calc_empirical, get_cov_model, fit_cov_model
+from sdinterp.variogram import calc_empirical, get_cov_model, fit_cov_model
 
 
 def test_calc_empirical():
